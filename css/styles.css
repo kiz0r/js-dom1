@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 25px 0px;
 }
+
 .btn {
   font-weight: bold;
   font-size: 18px;
@@ -12,4 +17,12 @@
   min-width: 230px;
   border-radius: 25px;
   transition: 0.5s all ease;
+}
+
+.imageField {
+  background-image: url(https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg);
+  margin: 0 auto;
+  width: 800px;
+  height: 500px;
+  transition: 0.9s all ease;
 }

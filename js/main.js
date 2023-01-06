@@ -19,3 +19,17 @@ changeColorBtn.addEventListener('click', () => {
 });
 
 // 3) Відобразити картинку. Зробити так, щоб при появі сторінки відображалася одна картинка, а при наведенні миші на неї відображалася інша.
+const bgImage = document.querySelector('.imageField');
+
+bgImage.addEventListener('mouseover', showImageWhenHover);
+bgImage.addEventListener('mouseleave', setImage);
+
+function setImage() {
+  bgImage.style.backgroundImage =
+    'url(https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg)';
+}
+
+function showImageWhenHover() {
+  bgImage.style.backgroundImage =
+    'url(https://cdn.pixabay.com/photo/2016/01/08/11/57/butterflies-1127666_960_720.jpg)';
+}
